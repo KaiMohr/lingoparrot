@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kai.mParrot" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP">
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    </uses-permission>
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.kai.mParrot.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.kai.mParrot.addSounds"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            </activity>
+
+        <activity android:name="com.example.kai.mParrot.ListRecordingActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.kai.mParrot.addSounds"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.example.kai.mParrot.helpActivity"
+            android:label="@string/app_name">
+            android:screenOrientation="portrait">
+        </activity>
+
+    </application>
+
+</manifest>

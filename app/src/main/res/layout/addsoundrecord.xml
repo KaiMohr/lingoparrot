@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000"
+    android:weightSum="1"
+    tools:context=".addSounds">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="RECORDER"
+        android:id="@+id/textName"
+        android:textStyle="bold"
+        android:textColor="#ffc2ffb4"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recordSoundName"
+        android:background="#ffffe7c3"
+        android:textAlignment="center"
+        android:text=".mp4"
+        android:layout_gravity="center_horizontal"
+        android:selectAllOnFocus="false"
+        android:padding="@dimen/abc_text_size_large_material"
+        android:textSize="@dimen/abc_text_size_large_material" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:onClick="start"
+        android:text="@string/start"
+        android:layout_weight="0.20"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/holo_blue_bright"
+        style="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignRight="@+id/textView1"
+        android:onClick="stop"
+        android:text="@string/stop"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.22"
+        android:textColor="@android:color/holo_blue_light"
+        style="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@android:style/TextAppearance.DeviceDefault.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:onClick="play"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/play"
+        android:layout_weight="0.26"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REDO"
+        android:id="@+id/redoRecording"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/holo_blue_light"
+        style="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="show recordings"
+        android:id="@+id/listRecordings"
+        android:layout_gravity="center"
+        android:layout_weight="0.36"
+        android:textColor="@android:color/holo_blue_light"
+        style="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/helpButton"
+        android:id="@+id/helpButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.16"
+        android:textAppearance="@android:color/holo_blue_bright"
+        android:textColor="@android:color/holo_blue_light"
+        style="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/Recording"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>
+
