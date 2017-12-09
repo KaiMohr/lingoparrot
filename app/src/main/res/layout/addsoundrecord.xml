@@ -25,7 +25,6 @@
         android:background="#ffffe7c3"
         android:padding="@dimen/abc_text_size_large_material"
         android:selectAllOnFocus="false"
-        android:text="empty"
         android:textAlignment="center"
         android:textSize="@dimen/abc_text_size_large_material" />
 

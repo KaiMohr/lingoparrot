@@ -105,7 +105,7 @@ stt.setOnClickListener(new View.OnClickListener(){
     }
     public void start(View view) {
         try {
-        myAudioRecorder.setOutputFile(outputFile + mEdit.getText().toString());
+        myAudioRecorder.setOutputFile(outputFile + mEdit.getText().toString() + ".mp3");
         myAudioRecorder.prepare();
         myAudioRecorder.start();
 
