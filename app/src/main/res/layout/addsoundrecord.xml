@@ -18,29 +18,35 @@
         android:layout_gravity="center" />
 
     <EditText
+        android:id="@+id/recordSoundName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/recordSoundName"
-        android:background="#ffffe7c3"
-        android:textAlignment="center"
-        android:text=".mp4"
         android:layout_gravity="center_horizontal"
-        android:selectAllOnFocus="false"
+        android:background="#ffffe7c3"
         android:padding="@dimen/abc_text_size_large_material"
+        android:selectAllOnFocus="false"
+        android:text="empty"
+        android:textAlignment="center"
         android:textSize="@dimen/abc_text_size_large_material" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/speechToText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="74dp"
+        android:text="speak to text" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@android:style/TextAppearance.DeviceDefault.Large"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
         android:layout_below="@+id/imageView1"
+        android:layout_gravity="center_horizontal"
         android:layout_toLeftOf="@+id/imageView1"
+        android:layout_weight="0.20"
         android:onClick="start"
         android:text="@string/start"
-        android:layout_weight="0.20"
-        android:layout_gravity="center_horizontal"
-        android:textColor="@android:color/holo_blue_bright"
-        style="@android:style/TextAppearance.DeviceDefault.Large" />
+        android:textColor="@android:color/holo_blue_bright" />
 
     <Button
         android:id="@+id/button2"
